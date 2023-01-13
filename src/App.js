@@ -8,15 +8,17 @@ import { evaluate } from 'mathjs';
 
 function App() {
 
+  
+
+  
+
   const [input, setInput] = useState('');
 
-  const addInput = val => {  
+   const addInput = val => {    
 
-    if (!isNaN(input) || !isNaN(val)){
-      setInput(input + val);
-    }
-
-    
+    //if ( !isNaN(input) || !isNaN(val)  ){
+      setInput(input + val);      
+    //}
   };
 
   const calculateResult = () =>{
