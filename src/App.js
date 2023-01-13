@@ -1,6 +1,8 @@
 import './App.css';
 import logo from './images/logo.png'
 import Button from './components/Button.jsx'
+import Screen from './components/Screen';
+import ClearButton from './components/ClearButton';
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
           alt= 'logo text' />
       </div>
       <div className='calculator-container'>
+        <Screen />
         <div className='row'>
           <Button>7</Button>
           <Button>8</Button>
@@ -39,7 +42,9 @@ function App() {
           <Button>/</Button>
         </div>
           
-        <div className='row'></div>
+        <div className='row'>
+          <ClearButton>Clear</ClearButton>
+        </div>
       </div>
     </div>
   );
